@@ -35,4 +35,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     configure_blueprint(app)
-    app.run(ip, args.port, threaded=True)
+    app.run(ip, args.port, threaded=True, static_files={'/static': '../static/'})
