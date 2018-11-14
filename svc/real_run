@@ -1,0 +1,9 @@
+#!/bin/bash
+
+curr=$(cd "$(dirname "${BASH_SOURCE-$0}")"; pwd)
+cd ${curr}/../src
+curr=`pwd`
+
+
+echo "now in ${curr}"
+python run.py --port 5000
